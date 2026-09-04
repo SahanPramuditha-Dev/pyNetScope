@@ -4,9 +4,17 @@
 [![PyPI version](https://img.shields.io/pypi/v/pynetscope.svg)](https://pypi.org/project/pynetscope/)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-Embedded network intelligence, observability, and client-side database diagnostics for Python applications. 
+Embedded network intelligence, observability, and client-side database diagnostics for Python applications.
 
 `pyNetScope` provides lightweight, low-overhead monitoring for outgoing HTTP requests, database queries, endpoint health metrics, network speed, and path timings, complete with a terminal dashboard, anomaly detection, alerts, and OpenTelemetry compatibility.
+
+---
+
+## Architecture Overview
+
+![pyNetScope architecture overview](assets/architecture-overview.svg)
+
+Applications integrate pyNetScope through middleware and client instrumentation. The library captures request, database, timing, and error telemetry, processes it into metrics and health signals, then exposes the results through terminal views, alerts, webhooks, and OpenTelemetry-compatible outputs.
 
 ---
 
